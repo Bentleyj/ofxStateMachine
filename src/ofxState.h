@@ -64,7 +64,7 @@ namespace itg
 		virtual void touchDoubleTap(ofTouchEventArgs& touch) {}
 		virtual void touchCancelled(ofTouchEventArgs& touch) {}
 
-#ifndef TARGET_OPENGLES
+//#ifndef TARGET_OPENGLES
 		/* Please use the functions below instead
         virtual void mouseReleased(ofMouseEventArgs& data) {}
 		virtual void mousePressed(ofMouseEventArgs& data) {}
@@ -79,7 +79,7 @@ namespace itg
 		
 		virtual void keyPressed(int key) {}
 		virtual void keyReleased(int key) {}
-#endif
+//#endif
 		void changeState(string stateName)
 		{
 			ofNotifyEvent(changeStateEvent, stateName, this);
